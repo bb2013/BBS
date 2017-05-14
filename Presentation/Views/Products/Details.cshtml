@@ -1,0 +1,115 @@
+﻿@model Presentation.Models.Admin.Commerce.Products.ProductsModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductsModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nume)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodProdus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodProdus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriereProdus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescriereProdus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GreutateProdus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GreutateProdus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pret)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pret)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Producator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categorie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActiv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActiv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaKeywords)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaKeywords)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Url)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductsModelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
